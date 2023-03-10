@@ -1,0 +1,22 @@
+// FONTS
+@import './common/fonts';
+
+// GLOBAL SETTINGS
+@import './common/vars';
+@import './common/reset';
+@import './common/global';
+@import './common/animatons';
+@import './common/ui';
+
+// HEADER
+@import './components/header';
+//SIDEBAR
+@import './components/sidebar';
+// FOOTER
+@import './components/footer';
+
+
+// PAGES STYLES
+@import './pages/ui-test-only';
+
+

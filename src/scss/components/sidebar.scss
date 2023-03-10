@@ -1,0 +1,49 @@
+.sidebar {
+  width: 284px;
+  background: $colorLight;
+  height: calc(100vh - $heightHeader);
+  margin-top: $heightHeader;
+  position: fixed;
+  z-index: $indexMainUI;
+  top: 0;
+  // .sidebar__inner
+  &__inner {
+    padding: 30px 25px 30px 20px;
+  }
+  // .sidebar__menu-list
+  &__menu-list {
+    display: flex;
+    flex-direction: column;
+  }
+  // .sidebar__menu-link
+  &__menu-link {
+    display: inline-flex;
+    padding-left: 20px;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $colorDark;
+    text-decoration: none;
+    height: 60px;
+    border-radius: 8px;
+    width: 100%;
+    background: #fff;
+    transition: $transition;
+
+    span {
+      display: inline-block;
+      margin-left: 10px;
+    }
+
+    &.active {
+      color: $colorJeans;
+      background: #FFEFC3;
+
+      svg {
+        fill: $colorJeans;
+      }
+    }
+  }
+}
+

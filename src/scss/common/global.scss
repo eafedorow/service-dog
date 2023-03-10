@@ -1,0 +1,35 @@
+
+.container {
+  max-width: 100%;
+  width: 100%;
+  padding: 0 $containerSidePadding+px;
+}
+
+// Body Locked
+body {
+  font-family: $fontPrimary;
+  min-height: 100vh;
+  &.locked {
+      overflow: hidden;
+  }
+}
+
+main {
+  background: rgba(230, 232, 248, 0.2);
+  border-radius: 20px 0px 0px 0px;  
+  margin-top: $heightHeader;
+  margin-left: 284px;
+  min-height: calc(100vh - $heightHeader);
+}
+
+// Animations
+// Fade
+@keyframes fade {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('./html/head.html', {
+    "title": "UI-компоненты"
+  })
+  <body>
+    @@include('html/header.html')
+    @@include('html/sidebar.html')
+    <main>
+      <div class="ui-container">
+        <div class="input" style="margin-bottom:10px">
+          <label class="input__inner" for="example-input">
+            <span class="input__label">Пример названия инпута</span>
+            <input class="input__self" id="example-input" type="text" placeholder="Пример плейсхолдера">
+          </label>
+        </div>
+
+        <div class="input required" style="margin-bottom:10px">
+          <label class="input__inner" for="example-required-input">
+            <span class="input__label">Пример обязательного инпута</span>
+            <input class="input__self" id="example-required-input" type="text" placeholder="Пример плейсхолдера">
+          </label>
+        </div>
+
+        <div class="input required invalid" style="margin-bottom:10px">
+          <label class="input__inner" for="example-invalid-input">
+            <span class="input__label">Пример невалидного инпута</span>
+            <input class="input__self" id="example-invalid-input" type="text" placeholder="Пример плейсхолдера" invalid>
+            <span class="input__invalid-text">Текст ошибки</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="ui-container">
+        <div class="textarea" style="margin-bottom:10px">
+          <label class="textarea__inner " for="exmaple-textarea">
+            <span class="textarea__label">Пример ввода текста</span>
+            <textarea class="textarea__self" name="text" id="exmaple-textarea" placeholder="Пример плейсхолдера"></textarea>
+            <span class="textarea__invalid-text"></span>
+          </label>
+        </div>
+
+        <div class="textarea required" style="margin-bottom:10px">
+          <label class="textarea__inner " for="exmaple-textarea">
+            <span class="textarea__label">Пример ввода обязательного текста</span>
+            <textarea class="textarea__self" name="text" id="exmaple-textarea1" placeholder="Пример плейсхолдера"></textarea>
+          </label>
+        </div>
+
+        <div class="textarea required invalid" style="margin-bottom:10px">
+          <label class="textarea__inner " for="exmaple-textarea">
+            <span class="textarea__label">Пример ввода невалидного текста</span>
+            <textarea class="textarea__self" name="text" id="exmaple-textarea2" placeholder="Пример плейсхолдера"></textarea>
+            <span class="textarea__invalid-text">Текст ошибки</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="ui-container">
+        <button class="btn plus">
+          <div class="plus-container">
+            <svg class="icon__plus">
+              <use xlink:href="img/icons.svg#plus"></use>
+            </svg>
+          </div>
+          <span>
+            Новая проверка
+          </span>
+        </button>
+
+        <button class="btn plus" disabled>
+          <div class="plus-container">
+            <svg class="icon__plus">
+              <use xlink:href="img/icons.svg#plus"></use>
+            </svg>
+          </div>
+          <span>
+            Новая проверка
+          </span>
+        </button>
+      </div>
+
+      <div class="ui-container">
+        <button class="btn">
+          <span>Кнопка</span>
+        </button>
+
+        <button class="btn" disabled>
+          <span>Кнопка</span>
+        </button>
+      </div>
+
+      <div class="ui-container">
+        <button class="btn outline">
+          <span>Кнопка</span>
+        </button>
+
+        <button class="btn outline" disabled>
+          <span>Кнопка</span>
+        </button>
+      </div>
+
+      <div class="ui-container">
+        <button class="btn static">
+          <svg class="icon__edit">
+            <use xlink:href="img/icons.svg#edit"></use>
+          </svg>
+        </button>
+
+        <button class="btn static">
+          <svg class="icon__list">
+            <use xlink:href="img/icons.svg#list"></use>
+          </svg>
+        </button>
+
+        <button class="btn static rotate">
+          <svg class="icon__rotate">
+            <use xlink:href="img/icons.svg#rotate"></use>
+          </svg>
+        </button>
+
+        <button class="btn static">
+          <span class="icon__text">Редактировать</span>
+          <svg class="icon__edit">
+            <use xlink:href="img/icons.svg#edit"></use>
+          </svg>
+        </button>
+      </div>
+
+
+      <div class="ui-container">
+        <a class="link" href="#!" title="Кнопка-ссылка">Кнопка-ссылка</a>
+        <a class="link" href="#!" disabled>Кнопка-ссылка</a>
+      </div>
+
+      <div class="ui-container">
+        <button class="btn bell">
+          <svg class="icon__bell">
+            <use xlink:href="img/icons.svg#bell"></use>
+          </svg>
+        </button>
+        <button class="btn bell">
+          <svg class="icon__bell">
+            <use xlink:href="img/icons.svg#bell"></use>
+          </svg>
+          <div class="bell-notification absolute"></div>
+        </button>
+      </div>
+
+      <div class="ui-container">
+        <svg class="icon__arrow-down">
+          <use xlink:href="img/icons.svg#arrow-down"></use>
+        </svg>
+      </div>
+    </main>
+    @@include('html/footer.html')
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
